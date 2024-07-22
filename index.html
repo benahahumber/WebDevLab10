@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Practice Lab</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+
+<body>
+    <!-- Navigation Bar (15%) -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="vought.jpg" width="100" height="100" alt="Brand Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hero">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section (15%) -->
+    <section id="hero">
+        <div id="heroCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#heroCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#heroCarousel" data-slide-to="1"></li>
+                <li data-target="#heroCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="Hero Images.jpeg" class="d-block w-100" alt="Slide 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="display-4">Welcome to Our Website</h1>
+                        <p class="lead">We provide amazing services to help you grow your business</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="Hero Images 2.jpeg" class="d-block w-100" alt="Slide 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="display-4">Innovative Solutions</h1>
+                        <p class="lead">We offer innovative solutions to solve your business problems</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="Labs and science.jpeg" class="d-block w-100" alt="Slide 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="display-4">Expert Team</h1>
+                        <p class="lead">Our team consists of experts in various fields</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Services Section (15%) -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <i class="fas fa-cogs fa-3x mb-3"></i>
+                    <h4>HeroGuard</h4>
+                    <p>Introducing "HeroGuard," the ultimate service that deploys superheroes to fight crime and protect
+                        your city. Our elite team of heroes is equipped with extraordinary abilities, advanced
+                        technology, and unmatched bravery to tackle any threat, from petty theft to high-stakes heists.
+                        Available 24/7, HeroGuard ensures rapid response and unparalleled protection, keeping your
+                        community safe and secure. With HeroGuard, peace of mind is just a call away. Let our heroes
+                        handle the danger, so you can live without fear.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <i class="fas fa-laptop fa-3x mb-3"></i>
+                    <h4>HeroForge</h4>
+                    <p>Introducing "HeroForge," the revolutionary service that transforms ordinary humans into
+                        extraordinary superheroes. At HeroForge, we utilize cutting-edge genetic engineering, advanced
+                        training programs, and state-of-the-art technology to unlock your hidden potential and empower
+                        you with superhuman abilities. Whether you aspire to possess incredible strength, unparalleled
+                        agility, or mind-bending telepathy, our tailored transformation process will make your dreams a
+                        reality. Join HeroForge and become a part of an elite force dedicated to justice and protection.
+                        With HeroForge, you don't just become a hero; you become a legend.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <i class="fas fa-heart fa-3x mb-3"></i>
+                    <h4>ShadowOps</h4>
+                    <p>Introducing "ShadowOps," the premier service that harnesses the unique abilities of superheroes
+                        for corporate and national espionage. Our team of highly skilled and discreet heroes operates
+                        under the radar to gather critical intelligence, infiltrate secure facilities, and execute
+                        covert missions with precision. Equipped with superhuman powers and cutting-edge technology,
+                        ShadowOps agents are adept at uncovering secrets, thwarting threats, and providing a strategic
+                        edge to businesses and governments. When the stakes are high, trust ShadowOps to deliver
+                        unparalleled results, ensuring your competitive advantage and national security. With ShadowOps,
+                        intelligence meets excellence.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio/Gallery Section (15%) -->
+    <section id="portfolio" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="Big Boss.jpeg" class="card-img-top" alt="Portfolio Item 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Project ShadowOps</h5>
+                            <p class="card-text">Introducing "StealthGenesis," the groundbreaking service that
+                                transforms ordinary humans into elite espionage agents using advanced gene therapy. At
+                                StealthGenesis, we combine cutting-edge genetic modifications with rigorous training to
+                                enhance your physical and cognitive abilities, enabling unparalleled stealth, agility,
+                                and intelligence. Our bespoke transformation process equips you with the skills
+                                necessary to excel in covert operations, from infiltrating secure facilities to
+                                gathering critical intelligence undetected. Join StealthGenesis and unlock your
+                                potential to become a master of espionage. With StealthGenesis, you don’t just become an
+                                agent; you become the ultimate instrument of stealth and strategy.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="Soldiers.jpeg" class="card-img-top" alt="Portfolio Item 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Project SuperSoldier</h5>
+                            <p class="card-text">A pioneering service that enhances USMC soldiers' reflexes and strength
+                                through cutting-edge gene therapy. ValorEdge combines the latest advancements in genetic
+                                engineering with intensive training programs to elevate the physical capabilities of
+                                Marines, ensuring they are faster, stronger, and more resilient than ever before. Our
+                                specialized treatments focus on optimizing muscle performance, accelerating reflexes,
+                                and enhancing endurance, giving soldiers a decisive edge in the field. With ValorEdge,
+                                the bravery and dedication of the USMC are amplified, creating a new generation of elite
+                                warriors ready to face any challenge. ValorEdge: Enhancing strength, amplifying valor.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="Superheros fighting.jpeg" .jpg" class="card-img-top" alt="Portfolio Item 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Project Super</h5>
+                            <p class="card-text"> is embarking on an exciting project to develop and test a new
+                                superhero character that will be the face of our upcoming multimedia franchise. This
+                                project aims to create a compelling, relatable, and visually striking superhero who will
+                                captivate audiences through comic books, digital media, and interactive content. The
+                                project spans several phases, including concept creation, design and development,
+                                narrative building, testing and iteration, and finalization and launch.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form (15%) -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contact Us</h2>
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="inputName">Name</label>
+                        <input type="text" class="form-control" id="inputName" placeholder="Your Name">
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="inputEmail">Email</label>
+                        <input type="email" class="form-control" id="inputEmail" placeholder="Your Email">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="inputMessage">Message</label>
+                    <textarea class="form-control" id="inputMessage" rows="4" placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer (5%) -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Vought. All rights reserved.</p>
+        <div>
+            <a href="#" class="text-white mx-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                    fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                    <path
+                        d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                </svg></a>
+            <a href="#" class="text-white mx-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                    fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                    <path
+                        d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+                </svg></a>
+            <a href="#" class="text-white mx-2"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                    fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                    <path
+                        d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                </svg></a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</html>
